@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_BDOakbgtEeiW0-1UFb8f-g" label="RCDWH_SlatePull" description="Test Talend Slate ETL" language="java" technicalLabel="RCDWH_SLATEPULL" author="_BDOakrgtEeiW0-1UFb8f-g" productVersion="Talend Cloud Data Management Platform-7.0.1.20180712_0921-patch" url="{&quot;location&quot;:&quot;https://github.com/RollinsProgramming/Talend_SlateETL&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false"/>
+  <TalendProperties:User xmi:id="_BDOakrgtEeiW0-1UFb8f-g" login="brodriguez@trial13411.us.talend.com" firstName="Bayrex" lastName="Rodriguez" type="DQ"/>
+</xmi:XMI>

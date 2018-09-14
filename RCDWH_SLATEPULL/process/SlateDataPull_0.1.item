@@ -111,8 +111,8 @@
     <routinesParameter id="_La1HkLgtEeiW0-1UFb8f-g" name="DQTechnical"/>
     <routinesParameter id="_LbJQoLgtEeiW0-1UFb8f-g" name="SQLike"/>
   </parameters>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_6"/>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -125,8 +125,6 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;rol&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;slate_rol_brodriguez&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="w4sLR1gIiwdrFjTDDZGAaRZ5kXipCEdkefYv1Le4WcNNEhwFA2gWkw=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_I0t8wLg0EeiW0-1UFb8f-g - stgLoadCtrl"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="_3TjTcLgwEeiW0-1UFb8f-g - SlateDataDump"/>
@@ -142,48 +140,751 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="startDateTimeStgLoad"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ref"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="endDateTimeStgLoad"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="numberOfRecordsStgLoad"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prefix"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Preferred"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Source"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="startDateTimePresLoad"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Middle"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="endDateTimePresLoad"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Last"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Alias"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTComposite"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTEnglish"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTMath"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTReading"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTScienceReasoning"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTWriting"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTEnglishWriting"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTWritingIdeasandAnalysis"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTWritingDevelopmentandSupport"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTWritingOrganization"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTWritingLanguageUseandConventions"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTEnglishLanguageArts"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTSTEM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveStreet1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveStreet2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveStreet3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveCity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveCounty"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveRegion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActivePostal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveCountry"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveGeomarket"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveContinent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveFromDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveToDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveCountryFIPSCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveCountryISO2Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveCountryISO3Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ActiveCountrySISExport"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Birthdate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Age"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sex"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hispanic"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CitizenshipStatus"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PrimaryCitizenship"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SecondaryCitizenship"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentResident"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Daytime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mobile"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Evening"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DaysinSystem"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AcademicInterest"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Campuscode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CertificateInterest"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommonAppID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EntryTerm"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FelonyExplanation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GraduateInterest"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HispanicInd"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InterestType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Legacy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProgramLevelInterest"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Race"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StaffAssignedAS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StaffAssignedLocked"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StudentType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndecidedUndergraduate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EventsCommaSeparated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Institution"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Language"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1From"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1To"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Field"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Major"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1GPA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1GPAScale"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1ClassRankXoutofY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Degree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1DegreeConferred"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Confirmed"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1GPAConverted"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Major1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Major2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Minor"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Region"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Created"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Updated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Honors"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Awards"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Hours"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1ClassRankNumeric"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1ClassSizeNumeric"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1GPARecalculated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1Website"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HighSchool1NumberofActiveApplications"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IELTSOverallBandScore"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IELTSListening"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IELTSReading"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IELTSWriting"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IELTSSpeaking"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InteractionsCommaSeparated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IPEDSClassification"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceMemo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceSummary"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceCategory"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceScore"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceExport"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceExport2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceExport3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceExport4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="First_SourceOriginFirstSourceExport5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentStreet1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentStreet2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentStreet3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentCity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentCounty"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentRegion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentPostal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentCountry"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PermanentGeomarket"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Continent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tags"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Created"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Updated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prospect_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DetailsSATSuperscore"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DetailsRNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SATICombinedCRMW"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SATICriticalReading"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SATIMath"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SATIWriting"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SATIEssaySubscore"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SATIWritingMultipleChoiceSubscore"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOEFLTotal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOEFLListening"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOEFLReading"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOEFLStructureWrittenExpression"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOEFLSpeaking"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1GPA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1Major"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1Institution"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1ClassRankXoutofY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2Institution"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2Major"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2GPA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2ClassRankXoutofY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2Honors"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1Honors"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1Awards"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2Awards"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2Region"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool2ClassSizeNumeric"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1ClassSizeNumeric"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1Region"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UndergraduateSchool1City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AppDetailsFloridaHighSchool"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApplicationStatus"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApplicationSlateID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AppTags"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApplicationRank"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Scholarship"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ASDenyHoltAccept"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AdditionalScholarship"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TestScoreWaived"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LetterSentDateDeny"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LetterSentDateAccept"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HSReportedGPA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation2CriminalHistory"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ViolationSchoolDiscipline"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VisaType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LegacyParentInformation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HeardAboutRollins"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RoyallID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violations"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HonorsDegree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LetterSentDateHolt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApplicationType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApplicationFeePaid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FloridaHighSchool"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HSClassRank"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HSClassSize"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HSClassPercentile"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CollegeGPA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Grade12thGPA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommonAppID1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AppYieldCampaignPhoneathonCallCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AppYieldCampaignPhoneathonCallDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AwaitingSubmissionDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AwaitingPaymentDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AwaitingMaterialsDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AwaitingCommitteDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AwaitingDecisionDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AwaitingConfirmationDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecidedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OtherPlans"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AttendingOtherSchool"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEEBofCollegeAttending"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WhatAttractedYouToTheOtherCollege"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WhatDidYouLikeBestAboutRollins"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PhoneathonCallDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PhoneathonCallCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PhoneathonCallNotes"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AppDetailsAMPDecision"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionHistoryAllDecisions"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionHistoryAllCorrespondenceDecisions"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionHistoryConfirmed"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionHistoryCorrespondenceConfirmed"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionHistoryReleased"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionHistoryCorrespondenceReleased"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionHistoryReceived"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionHistoryCorrespondenceReceived"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionConfirmedName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionConfirmedReason"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionConfirmedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionConfirmedExportCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionConfirmedUser"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionConfirmedComments"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionConfirmedExport2Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionConfirmedExport3Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionReleasedName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionReleasedReason"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionReleasedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionReleasedDateReceived"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionReleasedExportCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionReleasedExport2Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionReleasedExport3Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionReleasedUser"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionReleasedComments"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecommendedDecision"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMPDecision"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EarlyDecisionAgreement"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DecisionScholarshipRecommendations"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EREarlyDecisionRolloverToRD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApplicationCreatedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApplicationSubmittedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ApplicationUpdatedDate"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="Slate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="stgLoadCtrl" name="tDBInput_6">
-      <column comment="" key="false" length="23" name="startDateTimeStgLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="endDateTimeStgLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="numberOfRecordsStgLoad" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="startDateTimePresLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="endDateTimePresLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="16" name="Ref" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="346" name="Name" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Prefix" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="Preferred" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="First" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="Middle" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="Last" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Suffix" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="Alias" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTComposite" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTEnglish" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTMath" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTReading" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTScienceReasoning" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTWriting" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTEnglishWriting" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTWritingIdeasandAnalysis" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTWritingDevelopmentandSupport" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTWritingOrganization" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTWritingLanguageUseandConventions" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTEnglishLanguageArts" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACTSTEM" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="ActiveStreet1" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="ActiveStreet2" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="ActiveStreet3" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="ActiveCity" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="ActiveCounty" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="ActiveRegion" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="ActivePostal" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="ActiveCountry" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="ActiveGeomarket" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="ActiveContinent" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ActiveFromDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ActiveToDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="ActiveCountryFIPSCode" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="ActiveCountryISO2Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="ActiveCountryISO3Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="ActiveCountrySISExport" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Birthdate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Age" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Sex" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Hispanic" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CitizenshipStatus" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="PrimaryCitizenship" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="SecondaryCitizenship" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="PermanentResident" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="Email" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Daytime" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Mobile" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Evening" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DaysinSystem" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="AcademicInterest" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Campuscode" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="CertificateInterest" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="CommonAppID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="EntryTerm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="FelonyExplanation" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="GraduateInterest" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="HispanicInd" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="InterestType" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Legacy" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="ProgramLevelInterest" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="RNumber" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Race" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="StaffAssignedAS" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="StaffAssignedLocked" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="StudentType" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="UndecidedUndergraduate" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="EventsCommaSeparated" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="HighSchool1Type" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="HighSchool1Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="HighSchool1Institution" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="HighSchool1Language" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="HighSchool1From" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="HighSchool1To" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="HighSchool1Field" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="HighSchool1Major" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="HighSchool1GPA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="HighSchool1GPAScale" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="HighSchool1ClassRankXoutofY" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="HighSchool1Degree" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="HighSchool1DegreeConferred" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="HighSchool1Confirmed" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="HighSchool1GPAConverted" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="HighSchool1Major1" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="HighSchool1Major2" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="HighSchool1Minor" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="HighSchool1City" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="HighSchool1Region" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="HighSchool1Country" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="HighSchool1Created" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="HighSchool1Updated" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="36" name="HighSchool1Honors" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="HighSchool1Awards" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="HighSchool1Hours" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="HighSchool1ClassRankNumeric" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="HighSchool1ClassSizeNumeric" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="HighSchool1GPARecalculated" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="HighSchool1Website" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="HighSchool1NumberofActiveApplications" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="IELTSOverallBandScore" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="IELTSListening" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="IELTSReading" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="IELTSWriting" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="IELTSSpeaking" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="InteractionsCommaSeparated" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="IPEDSClassification" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="First_SourceOriginFirstSourceDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="First_SourceOriginFirstSourceMemo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="First_SourceOriginFirstSourceSummary" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="First_SourceOriginFirstSourceCategory" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="First_SourceOriginFirstSourceScore" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="First_SourceOriginFirstSourceExport" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="First_SourceOriginFirstSourceExport2" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="First_SourceOriginFirstSourceExport3" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="First_SourceOriginFirstSourceExport4" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="First_SourceOriginFirstSourceExport5" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="PermanentStreet1" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="PermanentStreet2" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="PermanentStreet3" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="PermanentCity" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="PermanentCounty" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="PermanentRegion" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="PermanentPostal" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="PermanentCountry" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="PermanentGeomarket" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="Continent" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Tags" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Created" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Updated" nullable="false" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Status" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="Prospect_ID" nullable="true" originalDbColumnName="Prospect ID" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DetailsSATSuperscore" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DetailsRNumber" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="SATICombinedCRMW" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="SATICriticalReading" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="SATIMath" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="SATIWriting" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="SATIEssaySubscore" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="SATIWritingMultipleChoiceSubscore" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="TOEFLTotal" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="TOEFLListening" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="TOEFLReading" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="TOEFLStructureWrittenExpression" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="TOEFLSpeaking" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="UndergraduateSchool1GPA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="UndergraduateSchool1Major" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="UndergraduateSchool1Institution" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="UndergraduateSchool1ClassRankXoutofY" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="UndergraduateSchool2Institution" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="UndergraduateSchool2Major" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="UndergraduateSchool2GPA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="UndergraduateSchool2ClassRankXoutofY" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="36" name="UndergraduateSchool2Honors" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="36" name="UndergraduateSchool1Honors" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="UndergraduateSchool1Awards" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="UndergraduateSchool2Awards" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="UndergraduateSchool2Country" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="UndergraduateSchool2City" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="UndergraduateSchool2Region" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="UndergraduateSchool2ClassSizeNumeric" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="UndergraduateSchool1ClassSizeNumeric" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="UndergraduateSchool1Region" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="UndergraduateSchool1Country" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="UndergraduateSchool1City" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="AppDetailsFloridaHighSchool" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="ApplicationStatus" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="ApplicationSlateID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="AppTags" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ApplicationRank" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Scholarship" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="ASDenyHoltAccept" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="AdditionalScholarship" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="TestScoreWaived" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="LetterSentDateDeny" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="LetterSentDateAccept" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="HSReportedGPA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Violation2CriminalHistory" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="ViolationSchoolDiscipline" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="VisaType" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="LegacyParentInformation" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="HeardAboutRollins" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="RoyallID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Violations" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="HonorsDegree" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="LetterSentDateHolt" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="ApplicationType" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="ApplicationFeePaid" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="FloridaHighSchool" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="HSClassRank" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="HSClassSize" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="HSClassPercentile" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="CollegeGPA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Grade12thGPA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="CommonAppID1" nullable="true" originalDbColumnName="CommonAppID" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="AppYieldCampaignPhoneathonCallCode" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="AppYieldCampaignPhoneathonCallDate" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="AwaitingSubmissionDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="AwaitingPaymentDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="AwaitingMaterialsDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="AwaitingCommitteDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="AwaitingDecisionDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="AwaitingConfirmationDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DecidedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="OtherPlans" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="AttendingOtherSchool" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="CEEBofCollegeAttending" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="WhatAttractedYouToTheOtherCollege" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="WhatDidYouLikeBestAboutRollins" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="PhoneathonCallDate" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="PhoneathonCallCode" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="PhoneathonCallNotes" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="AppDetailsAMPDecision" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionHistoryAllDecisions" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionHistoryAllCorrespondenceDecisions" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionHistoryConfirmed" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionHistoryCorrespondenceConfirmed" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionHistoryReleased" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionHistoryCorrespondenceReleased" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionHistoryReceived" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionHistoryCorrespondenceReceived" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="DecisionConfirmedName" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="DecisionConfirmedReason" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DecisionConfirmedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="DecisionConfirmedExportCode" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="129" name="DecisionConfirmedUser" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionConfirmedComments" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="DecisionConfirmedExport2Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="DecisionConfirmedExport3Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="DecisionReleasedName" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="64" name="DecisionReleasedReason" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DecisionReleasedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DecisionReleasedDateReceived" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="DecisionReleasedExportCode" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="DecisionReleasedExport2Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="DecisionReleasedExport3Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="129" name="DecisionReleasedUser" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionReleasedComments" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="RecommendedDecision" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="AMPDecision" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="EarlyDecisionAgreement" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="DecisionScholarshipRecommendations" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="EREarlyDecisionRolloverToRD" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ApplicationCreatedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ApplicationSubmittedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ApplicationUpdatedDate" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd' 'HH:mm:ss'.000'&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -197,54 +898,263 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="stgLoadCtrl" name="StagingMapped">
-      <column comment="" key="false" length="23" name="startDateTimeStgLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="endDateTimeStgLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="numberOfRecordsStgLoad" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="startDateTimePresLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="endDateTimePresLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
+    <metadata connector="FLOW" label="output" name="output"/>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="StagingMapped" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row1.startDateTimeStgLoad " name="startDateTimeStgLoad" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row1.endDateTimeStgLoad " name="endDateTimeStgLoad" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row1.numberOfRecordsStgLoad " name="numberOfRecordsStgLoad" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row1.id " name="id" type="id_Long"/>
-        <mapperTableEntries expression="row1.Source " name="Source" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.startDateTimePresLoad " name="startDateTimePresLoad" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row1.endDateTimePresLoad " name="endDateTimePresLoad" nullable="true" type="id_Date"/>
-      </outputTables>
+      <outputTables name="output" sizeState="INTERMEDIATE"/>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="startDateTimeStgLoad" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="endDateTimeStgLoad" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="numberOfRecordsStgLoad" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="id" type="id_Long"/>
-        <mapperTableEntries name="Source" nullable="true" type="id_String"/>
-        <mapperTableEntries name="startDateTimePresLoad" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="endDateTimePresLoad" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Ref" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Prefix" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Preferred" nullable="true" type="id_String"/>
+        <mapperTableEntries name="First" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Middle" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Last" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Suffix" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Alias" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ACTComposite" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTEnglish" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTMath" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTReading" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTScienceReasoning" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTWriting" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTEnglishWriting" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTWritingIdeasandAnalysis" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTWritingDevelopmentandSupport" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTWritingOrganization" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTWritingLanguageUseandConventions" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTEnglishLanguageArts" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ACTSTEM" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="ActiveStreet1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveStreet2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveStreet3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveCounty" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveRegion" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActivePostal" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveGeomarket" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveContinent" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveFromDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ActiveToDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ActiveCountryFIPSCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveCountryISO2Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveCountryISO3Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ActiveCountrySISExport" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Birthdate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Age" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Sex" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Hispanic" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CitizenshipStatus" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PrimaryCitizenship" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SecondaryCitizenship" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentResident" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Email" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Daytime" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Mobile" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Evening" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DaysinSystem" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="AcademicInterest" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Campuscode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CertificateInterest" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommonAppID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EntryTerm" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FelonyExplanation" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GraduateInterest" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HispanicInd" nullable="true" type="id_String"/>
+        <mapperTableEntries name="InterestType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Legacy" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ProgramLevelInterest" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Race" nullable="true" type="id_String"/>
+        <mapperTableEntries name="StaffAssignedAS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="StaffAssignedLocked" nullable="true" type="id_String"/>
+        <mapperTableEntries name="StudentType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndecidedUndergraduate" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EventsCommaSeparated" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Type" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Institution" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Language" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1From" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="HighSchool1To" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="HighSchool1Field" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Major" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1GPA" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="HighSchool1GPAScale" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="HighSchool1ClassRankXoutofY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Degree" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1DegreeConferred" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="HighSchool1Confirmed" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="HighSchool1GPAConverted" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="HighSchool1Major1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Major2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Minor" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Region" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Created" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="HighSchool1Updated" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="HighSchool1Honors" nullable="true" type="id_Object"/>
+        <mapperTableEntries name="HighSchool1Awards" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1Hours" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="HighSchool1ClassRankNumeric" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="HighSchool1ClassSizeNumeric" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="HighSchool1GPARecalculated" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="HighSchool1Website" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HighSchool1NumberofActiveApplications" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="IELTSOverallBandScore" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="IELTSListening" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="IELTSReading" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="IELTSWriting" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="IELTSSpeaking" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="InteractionsCommaSeparated" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IPEDSClassification" nullable="true" type="id_String"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceMemo" nullable="true" type="id_String"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceSummary" nullable="true" type="id_String"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceCategory" nullable="true" type="id_String"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceScore" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceExport" nullable="true" type="id_String"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceExport2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceExport3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceExport4" nullable="true" type="id_String"/>
+        <mapperTableEntries name="First_SourceOriginFirstSourceExport5" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentStreet1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentStreet2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentStreet3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentCounty" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentRegion" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentPostal" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PermanentGeomarket" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Continent" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Tags" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Created" type="id_Date"/>
+        <mapperTableEntries name="Updated" type="id_Date"/>
+        <mapperTableEntries name="Status" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Prospect_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DetailsSATSuperscore" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DetailsRNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SATICombinedCRMW" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="SATICriticalReading" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="SATIMath" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="SATIWriting" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="SATIEssaySubscore" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="SATIWritingMultipleChoiceSubscore" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="TOEFLTotal" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="TOEFLListening" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="TOEFLReading" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="TOEFLStructureWrittenExpression" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="TOEFLSpeaking" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="UndergraduateSchool1GPA" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="UndergraduateSchool1Major" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool1Institution" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool1ClassRankXoutofY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool2Institution" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool2Major" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool2GPA" nullable="true" type="id_Float"/>
+        <mapperTableEntries name="UndergraduateSchool2ClassRankXoutofY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool2Honors" nullable="true" type="id_Object"/>
+        <mapperTableEntries name="UndergraduateSchool1Honors" nullable="true" type="id_Object"/>
+        <mapperTableEntries name="UndergraduateSchool1Awards" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool2Awards" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool2Country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool2City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool2Region" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool2ClassSizeNumeric" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="UndergraduateSchool1ClassSizeNumeric" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="UndergraduateSchool1Region" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool1Country" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UndergraduateSchool1City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AppDetailsFloridaHighSchool" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ApplicationStatus" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ApplicationSlateID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AppTags" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ApplicationRank" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Scholarship" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ASDenyHoltAccept" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AdditionalScholarship" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TestScoreWaived" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LetterSentDateDeny" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LetterSentDateAccept" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HSReportedGPA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Violation2CriminalHistory" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationSchoolDiscipline" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VisaType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LegacyParentInformation" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HeardAboutRollins" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RoyallID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Violations" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HonorsDegree" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LetterSentDateHolt" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ApplicationType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ApplicationFeePaid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FloridaHighSchool" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HSClassRank" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HSClassSize" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HSClassPercentile" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CollegeGPA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Grade12thGPA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CommonAppID1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AppYieldCampaignPhoneathonCallCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AppYieldCampaignPhoneathonCallDate" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AwaitingSubmissionDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="AwaitingPaymentDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="AwaitingMaterialsDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="AwaitingCommitteDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="AwaitingDecisionDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="AwaitingConfirmationDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DecidedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="OtherPlans" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AttendingOtherSchool" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CEEBofCollegeAttending" nullable="true" type="id_String"/>
+        <mapperTableEntries name="WhatAttractedYouToTheOtherCollege" nullable="true" type="id_String"/>
+        <mapperTableEntries name="WhatDidYouLikeBestAboutRollins" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PhoneathonCallDate" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PhoneathonCallCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PhoneathonCallNotes" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AppDetailsAMPDecision" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionHistoryAllDecisions" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionHistoryAllCorrespondenceDecisions" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionHistoryConfirmed" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionHistoryCorrespondenceConfirmed" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionHistoryReleased" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionHistoryCorrespondenceReleased" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionHistoryReceived" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionHistoryCorrespondenceReceived" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionConfirmedName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionConfirmedReason" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionConfirmedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DecisionConfirmedExportCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionConfirmedUser" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionConfirmedComments" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionConfirmedExport2Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionConfirmedExport3Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionReleasedName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionReleasedReason" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionReleasedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DecisionReleasedDateReceived" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DecisionReleasedExportCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionReleasedExport2Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionReleasedExport3Code" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionReleasedUser" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionReleasedComments" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RecommendedDecision" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AMPDecision" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EarlyDecisionAgreement" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DecisionScholarshipRecommendations" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EREarlyDecisionRolloverToRD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ApplicationCreatedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ApplicationSubmittedDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ApplicationUpdatedDate" nullable="true" type="id_Date"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_I0t8wLg0EeiW0-1UFb8f-g"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -258,16 +1168,14 @@
     <elementParameter field="TEXT" name="USER" value="&quot;datawh&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="w7zCp/OHcuXpASTA0mp4Jw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;bay_StagingTest&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
-    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
-    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="startDateTimeStgLoad"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value=""/>
     <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
     <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_I0t8wLg0EeiW0-1UFb8f-g - stgLoadCtrl"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -279,118 +1187,39 @@
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="startDateTimeStgLoad"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="endDateTimeStgLoad"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="numberOfRecordsStgLoad"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Source"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="startDateTimePresLoad"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="endDateTimePresLoad"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false"/>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="stgLoadCtrl" name="tDBOutput_1">
-      <column comment="" key="false" length="23" name="startDateTimeStgLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="endDateTimeStgLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="numberOfRecordsStgLoad" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="startDateTimePresLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="endDateTimePresLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-    </metadata>
-    <metadata connector="REJECT" label="stgLoadCtrl" name="REJECT">
-      <column comment="" key="false" length="23" name="startDateTimeStgLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="endDateTimeStgLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="numberOfRecordsStgLoad" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="true" length="19" name="id" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="50" name="Source" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="startDateTimePresLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="endDateTimePresLoad" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
+    <metadata connector="FLOW" name="tDBOutput_2"/>
+    <metadata connector="REJECT" name="REJECT">
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_6" offsetLabelX="0" offsetLabelY="0" source="tDBInput_6" target="tMap_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="StagingMapped" lineStyle="0" metaname="StagingMapped" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="StagingMapped"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output"/>
   </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_6"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_026bbe82-98e6-46e9-8360-6b095493f62e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zoJZber0wLJiyWMXdocLu34qUBPtIR/reqCIypnnbKlKZE7MiVuX8J3/Fh8of92GbCQkaAJ0HDhx
-M4cUwy24lQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4fca946b-a653-4cd0-85ec-9adf3ac6989e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CVFaXmw7vYx5iLM8d2p2EV0y9QaRU05bHqO/y1rVqSMHhQv8mLotva0/5Qa1W2ey5h8qYVJsC5gG
-N8kLX5OvjA==</DigestValue></Reference></SignedInfo><SignatureValue>kHplAfw0OKtFUF5bLH1a6ckMfw7w45uhOOj58TUf3sN2b9IPKHweyBmOxitCWiw44oPcxU6MMtKT
-CusUlce6pLh0t1/dWTilofFQUL2kvNrKEla3hA1XnY3TxdYh5TMKnrL9OzIpGMqTvN2hs+Dhs5B5
-bB9bwsZh9V6uMHxIvGbLllO2OV9ydmg07dRz9cAbmki0unFkuyuzzW9enSGgTAujIaI7YslT1LFR
-cDlQRoA0gjrQHQAl96kT7yqoACN0qX3X3pn4/8Nie78JZDemkqO23llPYMJbBQDlXZ6ffPquwNdq
-5gUJu/eOVKkJYErozJUQaeZpYGtek70lNFmDZQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6fda6c48-65a9-46e0-bc89-6a42e898639b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8fC/+a9XwpIVg9uCxvry89HpmOCSVq/tk7ADl73tzrey2+WazJUf9wH97Yz7T2m33ILPeuejTSRR
+xcetc0dU0Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1f625967-b4d2-4c0e-be43-68dbf818d572"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jM2NZS6D6TZxphi7R+crowk9weXTBpEYRdCLawd28K/HM3omMYvrAaFgGtyNcz3SLG0tEVz2+vzy
+nsm3bcqyyg==</DigestValue></Reference></SignedInfo><SignatureValue>Xjh2gyFEAdHHwHEMgNWMgY4cmP6xaHgd+hVVth7+pEAC47HL2vpQQyLKbr8qIhNTo20pKAVPP9Lv
+wcCQPqLuW6zVAtOhckGjTSd5yMXqtEmqO6l+nFetZ8Amfro3tsGG6dt7sbn6qzcvc8LjMLbxcMSM
+kC9CYCkznvDHSWLXQD0I9PFeFNNwJqTaYzo6sETcMxBGPpG452Bo+MxSa7inFv1zOvOpy9lLc87n
+sdvkoWiFIbI7S9LBh4wApTvyAg4Kju9zLqGwJ8Mg+HpreFRgzuT4/oPuAuGqwiyt3L8Jb2iFfKlT
+g66zndGv+WM2pesqzJbGm1Pqg8pTq9P3Uqq+WQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -414,4 +1243,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4fca946b-a653-4cd0-85ec-9adf3ac6989e" Target="#_026bbe82-98e6-46e9-8360-6b095493f62e"><Timestamp>2018-09-14 18:35:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1f625967-b4d2-4c0e-be43-68dbf818d572" Target="#_6fda6c48-65a9-46e0-bc89-6a42e898639b"><Timestamp>2018-09-14 19:26:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

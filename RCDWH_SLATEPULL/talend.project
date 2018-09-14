@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
   <TalendProperties:Project xmi:id="_BDOakbgtEeiW0-1UFb8f-g" label="RCDWH_SlatePull" description="Test Talend Slate ETL" language="java" technicalLabel="RCDWH_SLATEPULL" author="_BDOakrgtEeiW0-1UFb8f-g" productVersion="Talend Cloud Data Management Platform-7.0.1.20180712_0921-patch" url="{&quot;location&quot;:&quot;https://github.com/RollinsProgramming/Talend_SlateETL&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false">
+    <technicalStatus xmi:id="_LMM1sLgtEeiW0-1UFb8f-g" label="development" code="DEV"/>
+    <technicalStatus xmi:id="_LMM1sbgtEeiW0-1UFb8f-g" label="testing" code="TEST"/>
+    <technicalStatus xmi:id="_LMM1srgtEeiW0-1UFb8f-g" label="production" code="PROD"/>
+    <documentationStatus xmi:id="_LMCdoLgtEeiW0-1UFb8f-g" label="unchecked" code="UCK"/>
+    <documentationStatus xmi:id="_LMCdobgtEeiW0-1UFb8f-g" label="checked" code="CHK"/>
+    <documentationStatus xmi:id="_LMCdorgtEeiW0-1UFb8f-g" label="validated" code="VAL"/>
     <migrationTask xmi:id="_LJ-oILgtEeiW0-1UFb8f-g" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_LJ-oIbgtEeiW0-1UFb8f-g" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_LJ-oIrgtEeiW0-1UFb8f-g" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>

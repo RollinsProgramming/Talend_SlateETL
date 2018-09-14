@@ -8,6 +8,9 @@
   <packaging>pom</packaging>
   <name>RCDWH_SLATEPULL Codes Master</name>
   <url>http://www.talend.org/</url>
+  <modules>
+    <module>code/routines</module>
+  </modules>
   <properties>
     <talend.project.name>RCDWH_SLATEPULL</talend.project.name>
     <encoding>UTF-8</encoding>

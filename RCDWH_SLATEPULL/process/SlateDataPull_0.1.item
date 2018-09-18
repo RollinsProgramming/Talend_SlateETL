@@ -636,7 +636,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Slate"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_2">
-      <column comment="" key="false" length="16" name="Ref" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="16" name="Ref" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="346" name="Name" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Prefix" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="64" name="Preferred" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -898,9 +898,8 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="output" name="output"/>
     <metadata connector="FLOW" label="bay_StagingTest" name="Output1">
-      <column comment="" key="false" length="16" name="Ref" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="16" name="Ref" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="346" name="Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -1626,11 +1625,12 @@
       <column comment="" key="false" length="2147483647" name="ER___Early_Decision_rollover_to_RD" nullable="true" originalDbColumnName="ER - Early Decision rollover to RD" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="23" name="Record_Insert_Date" nullable="true" originalLength="23" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Record_Update_Date" nullable="true" originalLength="23" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="output" sizeState="INTERMEDIATE"/>
       <outputTables name="Output1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.Ref" name="Ref" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Name" name="Name" nullable="true" type="id_String"/>
@@ -1796,7 +1796,7 @@
         <mapperTableEntries expression="row1.AppDetailsFloridaHighSchool " name="App___Details___Florida_High_School" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Created" name="Created" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.Updated" name="Updated" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Submitted" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.ApplicationSubmittedDate " name="Submitted" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row1.ApplicationStatus " name="Application_Status" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.ApplicationSlateID " name="Application_Slate_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.AppTags " name="App_Tags" nullable="true" type="id_String"/>
@@ -1840,40 +1840,42 @@
         <mapperTableEntries expression="row1.CEEBofCollegeAttending " name="CEEB_of_College_Attending" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.WhatAttractedYouToTheOtherCollege" name="What_attracted_you_to_the_other_college_" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.WhatDidYouLikeBestAboutRollins " name="What_did_you_like_best_about_Rollins_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Phoneathon_Call_Date" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Phoneathon_Call_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Phoneathon_Call_Notes" nullable="true" type="id_String"/>
-        <mapperTableEntries name="App___Details___AMP_Decision" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_History__all_decisions_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_History__all_correspondence_decisions_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_History__confirmed_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_History__correspondence_confirmed_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_History__released_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_History__correspondence_released_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_History__received_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_History__correspondence_received_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Confirmed_Date" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Decision_Confirmed_Export_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Confirmed_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Confirmed_Reason" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Confirmed_Export_2_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Confirmed_Export_3_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Confirmed_User" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Confirmed_Comments" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Released_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Released_Reason" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Released_Date" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Decision_Released___Date_Received" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="Decision_Released_Export_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Released_Export_2_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Released_Export_3_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Released_User" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Released_Comments" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Recommended_Decision" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AMP_Decision" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Early_Decision_Agreement" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Decision_Scholarship_Recommendations_" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ER___Early_Decision_rollover_to_RD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PhoneathonCallDate" name="Phoneathon_Call_Date" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PhoneathonCallCode " name="Phoneathon_Call_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PhoneathonCallNotes " name="Phoneathon_Call_Notes" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.AppDetailsAMPDecision " name="App___Details___AMP_Decision" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionHistoryAllDecisions " name="Decision_History__all_decisions_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionHistoryAllCorrespondenceDecisions " name="Decision_History__all_correspondence_decisions_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionHistoryConfirmed " name="Decision_History__confirmed_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionHistoryCorrespondenceConfirmed " name="Decision_History__correspondence_confirmed_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionHistoryReleased " name="Decision_History__released_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionHistoryCorrespondenceReleased " name="Decision_History__correspondence_released_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionHistoryReceived " name="Decision_History__received_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionHistoryCorrespondenceReceived " name="Decision_History__correspondence_received_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionConfirmedDate " name="Decision_Confirmed_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.DecisionConfirmedExportCode" name="Decision_Confirmed_Export_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionConfirmedName " name="Decision_Confirmed_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionConfirmedReason " name="Decision_Confirmed_Reason" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionConfirmedExport2Code " name="Decision_Confirmed_Export_2_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionConfirmedExport3Code " name="Decision_Confirmed_Export_3_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionConfirmedUser " name="Decision_Confirmed_User" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionConfirmedComments " name="Decision_Confirmed_Comments" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionReleasedName " name="Decision_Released_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionReleasedReason " name="Decision_Released_Reason" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionReleasedDate " name="Decision_Released_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.DecisionReleasedDateReceived " name="Decision_Released___Date_Received" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.DecisionReleasedExportCode " name="Decision_Released_Export_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionReleasedExport2Code " name="Decision_Released_Export_2_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionReleasedExport3Code " name="Decision_Released_Export_3_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionReleasedUser " name="Decision_Released_User" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionReleasedComments " name="Decision_Released_Comments" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.RecommendedDecision " name="Recommended_Decision" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.AMPDecision " name="AMP_Decision" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.EarlyDecisionAgreement " name="Early_Decision_Agreement" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DecisionScholarshipRecommendations " name="Decision_Scholarship_Recommendations_" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.EREarlyDecisionRolloverToRD " name="ER___Early_Decision_rollover_to_RD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="Record_Insert_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="" name="Record_Update_Date" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="Ref" nullable="true" type="id_String"/>
@@ -2148,8 +2150,6 @@
     <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="Ref"/>
     <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
     <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_I0t8wLg0EeiW0-1UFb8f-g - bay_StagingTest"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -3372,6 +3372,16 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Record_Insert_Date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Record_Update_Date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -3380,7 +3390,7 @@
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="bay_StagingTest" name="tDBOutput_2">
-      <column comment="" key="false" length="16" name="Ref" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="16" name="Ref" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="346" name="Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -4106,9 +4116,11 @@
       <column comment="" key="false" length="2147483647" name="ER___Early_Decision_rollover_to_RD" nullable="true" originalDbColumnName="ER - Early Decision rollover to RD" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="23" name="Record_Insert_Date" nullable="true" originalLength="23" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Record_Update_Date" nullable="true" originalLength="23" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="bay_StagingTest" name="REJECT">
-      <column comment="" key="false" length="16" name="Ref" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="true" length="16" name="Ref" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="346" name="Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -4834,6 +4846,8 @@
       <column comment="" key="false" length="2147483647" name="ER___Early_Decision_rollover_to_RD" nullable="true" originalDbColumnName="ER - Early Decision rollover to RD" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="23" name="Record_Insert_Date" nullable="true" originalLength="23" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Record_Update_Date" nullable="true" originalLength="23" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -4843,6 +4857,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="Output1" lineStyle="0" metaname="Output1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Record_Insert_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Record_Update_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Output1"/>
   </connection>
@@ -4851,13 +4873,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_53f333f4-b5f7-4f2d-b6fd-b8b7b054f850"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>idl9BLTps4OScy1q6afO9v4AJetuXsdL3UQBiDCnNAH0pNoKYRhjuoX7qdQdBJqCh6ltAFw7+1QT
-ggszLKVjJQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_980b9e33-8896-4f57-863b-42bec86e442f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tFDIaunxNJSdfkSevNqlS8A1O8uCTCLQP52pZJITWjK6H4s6eMnxR08BkcsHP/2D8vscGZ/LaE4l
-BTSKVv2cRw==</DigestValue></Reference></SignedInfo><SignatureValue>0vgL/PIb5pygjl2GvjTvRtoch6xqpYgGO/XSGSvew2vZmtwBTiF3LW1s4f6eFMxon2gpzQyQld6F
-JuvupNwquqYQYwCFMqRwt7FhJQCfEdN5PY2DNe6JkzODJJpyS7C8gg2HeNvCcrkLk5M1sEPqcxnV
-ur/4LwTCTVfItPTwzv2QYARvKbLv7Qx2ODWMjqPkCaGUBR5kv/VnFSUJHitP6/jMPiyaTPxXQLxs
-M7TL+82n8+Poyx+FO9eDb9Y7vbMEZ/FL86Z/+JAF1ldX+Fxrcg3NZJdP0HKl544hx66MJ1NAMeyq
-ygfKOnG1qwa3A83X21tInH8pA5U5kD/yZ9Cnag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dacbb838-435c-4c90-b026-17495aec8c9c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PnOw8AfUVdtJBvrUzz5n2bKZTe2ihwH0k2h1plFSbeSWlWHTcJyBfcbAyqu+cu+IA+FPiYu0Qm3u
+CiK/XIpbQQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7824364c-b49a-4699-9d28-9e7c15709c19"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5tGCNt5l9gAMN3Eqexu5+ZiIQ+G8D4/0WNIn2vKoT+Lz9NY+O2qM2jpOD9ghRjOTZmJkCi1qJ6Cn
+l/i7rbPo/A==</DigestValue></Reference></SignedInfo><SignatureValue>gvvGvPnT0Jb2AQwTwNz+mH+mLa9nvoLYfkix/syk9BaugETqK9FYCtxcfLEFpVdcEZu6th4Ea1CU
+8wGEDu9mumVF/WRvd14WLZuOS96XKYlgd04JSuqwmQKH4aYvc8V+/iI76p0pMYdSO1/gPpzR/yNu
+j9OdJRybLi1YCBeBMYOJF6Ts1a8N8u7EIYGrfd2093JguL6s3W2gKb0iU3YT74/WvSVcZa1Ug1N/
+luOx6Cfsan8xjovMPmQ+Wz+rptPTcKvNdFo2S69CbKsQItC3YVb0md4wzf5jS6JzPd4wAmN1yjmg
+NeBCUQ8fvHgVlBEXhjqOad4lUfP+Yr1BbYn2zg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -4881,4 +4903,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_980b9e33-8896-4f57-863b-42bec86e442f" Target="#_53f333f4-b5f7-4f2d-b6fd-b8b7b054f850"><Timestamp>2018-09-18 15:27:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7824364c-b49a-4699-9d28-9e7c15709c19" Target="#_dacbb838-435c-4c90-b026-17495aec8c9c"><Timestamp>2018-09-18 15:26:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

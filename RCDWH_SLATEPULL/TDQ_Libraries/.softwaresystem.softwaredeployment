@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:softwaredeployment="http://www.talend.org/cwm/foundation/softwaredeployment/2010">
+  <softwaredeployment:TdSoftwareSystem xmi:id="_tj_hELg0EeiW0-1UFb8f-g" name="Microsoft SQL Server" subtype="Microsoft SQL Server" version="11.00.3000"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_tkJ5Ibg0EeiW0-1UFb8f-g" name="Microsoft SQL Server" subtype="Microsoft SQL Server" version="14.00.3030"/>
+</xmi:XMI>

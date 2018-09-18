@@ -141,7 +141,6 @@
       <relatedItems xmi:id="_FO3Tg7tIEeiis6u8aX8gsQ" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_FO3ThLtIEeiis6u8aX8gsQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_FO3ThbtIEeiis6u8aX8gsQ" id="DataQualityDependencies" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_FO3ThrtIEeiis6u8aX8gsQ" id="_I0t8wLg0EeiW0-1UFb8f-g - bay_StagingTest" version="Latest" type="schema"/>
     </ItemsRelations>
     <deletedFolders>process/demo</deletedFolders>
     <migrationTask xmi:id="_LJ-oILgtEeiW0-1UFb8f-g" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
